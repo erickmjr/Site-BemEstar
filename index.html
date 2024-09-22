@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuide do seu Bem-Estar</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div id="container-header">
+            <div id="write-header">
+                <h1>Cuide da sua Saúde</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="#alimentacao">Alimentação</a></li>
+                            <li><a href="#exercicios">Exercícios</a></li>
+                            <li><a href="#saude">Saúde Mental</a></li>
+                            <li><a href="#calculadora">Calculadora de IMC</a></li>
+                            
+                        </ul>
+                    </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="alimentacao" class="secao">
+            <h1 class="sectionH1">Mantenha uma alimentação saudável</h1>
+            <h2 class="sectionH2">Dicas para manter uma dieta balanceada:</h2>
+            <ol class="sectionList">
+                <li>Coma uma variedade de alimentos ricos em nutrientes, como frutas, verduras, grãos integrais e proteínas magras.</li>
+                <li>Beba bastante água ao longo do dia para manter-se hidratado.</li>
+                <li>Limite o consumo de alimentos ultraprocessados, ricos em açúcar, sal e gorduras saturadas.</li>
+                <li>Inclua fontes de gorduras saudáveis na dieta, como abacate, nozes e azeite de oliva.</li>
+                <li>Prefira refeições caseiras sempre que possível, pois assim você controla os ingredientes e evita excessos de sódio e gordura.</li>
+                <li>Coma em horários regulares, evitando pular refeições para manter o metabolismo equilibrado.</li>
+                <li>Pratique o controle de porções, evitando exageros, principalmente em alimentos mais calóricos.</li>
+                <li>Evite bebidas açucaradas, como refrigerantes e sucos industrializados, optando por sucos naturais e água.</li>
+                <li>Consuma fibras regularmente, comendo frutas com casca, legumes e alimentos integrais para melhorar a digestão.</li>
+                <li>Modere o consumo de álcool, pois pode impactar negativamente na saúde e no controle de peso.</li>
+            </ol>
+        </section>
+
+        <section id="exercicios" class="secao">
+            <h1 class="sectionH1">Pratique Exercícios</h1>
+            <h2 class="sectionH2">Benefícios da atividade física</h2>
+            <p>A prática regular de atividade física traz inúmeros benefícios para a saúde, tanto física quanto mental. Ela ajuda a melhorar a circulação sanguínea, fortalecer os músculos e ossos, além de contribuir para a manutenção de um peso saudável. Além disso, o exercício físico regular pode reduzir o risco de doenças crônicas, como diabetes tipo 2, doenças cardíacas e hipertensão. No aspecto mental, a atividade física libera endorfinas, conhecidas como os hormônios da felicidade, que ajudam a reduzir o estresse, a ansiedade e a depressão, promovendo uma sensação geral de bem-estar e aumentando a qualidade do sono.</p>
+            <h2 class="sectionH2">Alguns exercícios ótimos para a saúde</h2>
+            <ul class="sectionList">
+                <li>Caminhada</li>
+                <li>Corrida</li>
+                <li>Natação</li>
+                <li>Andar de bicicleta</li>
+                <li>Musculação</li>
+            </ul>
+        </section>
+
+        <section class="secao" id="saude">
+            <h1 class="sectionH1">Saúde Mental</h1>
+            <p>A saúde mental é fundamental para o bem-estar geral, impactando diretamente a forma como pensamos, sentimos e lidamos com os desafios da vida. Manter uma boa saúde mental é essencial para enfrentar o estresse, desenvolver relacionamentos saudáveis e tomar decisões equilibradas. Assim como o corpo, a mente também precisa de cuidados, e isso envolve praticar o autocuidado, buscar apoio emocional quando necessário e adotar hábitos que promovam o equilíbrio mental, como descanso adequado, atividades de lazer e momentos de relaxamento. Negligenciar a saúde mental pode resultar em problemas como ansiedade, depressão e outras condições que afetam negativamente a qualidade de vida.</p>
+        </section>
+
+        <section class="secao" id="calculadora">
+            <h1 class="sectionH1">Índice de Massa Corporal</h1>
+            <p>O Índice de Massa Corporal (IMC) é uma medida utilizada para avaliar se uma pessoa está dentro do peso ideal em relação à sua altura. Ele é calculado dividindo o peso da pessoa (em quilogramas) pela altura ao quadrado (em metros). O IMC é amplamente utilizado como uma ferramenta simples para identificar se um indivíduo está abaixo do peso, com peso normal, sobrepeso ou obesidade. Embora seja uma referência útil, o IMC não leva em conta fatores como composição corporal, massa muscular e distribuição de gordura, por isso deve ser complementado por outras avaliações para obter um diagnóstico mais preciso sobre a saúde de cada pessoa.</p>
+            <h2 class="sectionH2">Calcule o seu IMC</h2>
+
+                    <form id="formulario">
+                        <label for="altura">Altura:</label>
+                        <input type="number" step="0.01" id="altura" class="inputSecao" placeholder="Insira sua altura (Metros)" required>
+
+                        <label for="peso">Peso:</label>
+                        <input type="number" id="peso" step="0.01" class="inputSecao"  placeholder="Insira seu peso (KGs)" required>
+                        <button type="button" onclick="calcularIMC()" disabled id="botaoIMC">Calcular</button>
+                        <div id="resultado"></div>
+                    </form>
+                    <aside>
+                        <h3>Lembrete:</h3>
+                        <p>O cálculo de IMC pode não refletir realmente sua condição de saúde, pois não leva em consideração fatores como porcentagem de massa muscular e afins.</p>
+                    </aside>
+        </section>
+
+        <footer>
+            <p>Site criado por <a href="https://github.com/erickmjr" target="_blank">erickmjr</a> &copy;</p>
+        </footer>
+    </main>
+</body>
+
+<script src="script.js"></script>
+</html>
