@@ -153,6 +153,10 @@ footer{
     padding: 1vh;
 }
 
+footer p{
+    margin: 0;
+}
+
 footer a{
     color: white;
 }
