@@ -126,7 +126,7 @@ p{
 #formulario input{
     display: block; 
     max-width: fit-content;
-    margin-bottom: 1vw;
+    margin: 0 auto 1vw auto;
 }
 
 input::-webkit-inner-spin-button {
