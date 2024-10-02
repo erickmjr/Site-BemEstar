@@ -139,12 +139,6 @@ form button{
     font-family: var(--fonte-padrao);
 }
 
-h3{
-    margin-top: 1vw;
-    font-size: 2.5vh;
-}
-
-
 footer{
     text-align: center;
     font-family: var(--fonte-padrao);
@@ -168,7 +162,7 @@ footer a{
     }
 
     header li a{
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
 
     .sectionH1{
@@ -188,7 +182,7 @@ footer a{
     }
 
     header li a{
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
 
     .sectionH1{
