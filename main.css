@@ -56,7 +56,7 @@ header ul {
 
 
 header li{
-    flex: 1 1 48%;
+    flex: 1 1 24%;
 }
 
 header li a{
@@ -189,7 +189,7 @@ footer a{
     }
     
     header li{
-        flex: 1 1 24%;
+        flex: 1 1 48%;
     }
 
     header li a{
