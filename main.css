@@ -151,8 +151,6 @@ form button{
     border-radius: 10px;
     cursor: pointer;
     font-family: var(--fonte-padrao);
-    max-width: 3vw;
-    max-height: 2vh;
 }
 
 footer{
