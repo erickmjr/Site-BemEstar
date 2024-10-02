@@ -127,6 +127,7 @@ p{
     display: block; 
     max-width: fit-content;
     margin: 0 auto 1vw auto;
+    
 }
 
 input::-webkit-inner-spin-button {
@@ -150,6 +151,8 @@ form button{
     border-radius: 10px;
     cursor: pointer;
     font-family: var(--fonte-padrao);
+    max-width: 3vw;
+    max-height: 2vh;
 }
 
 footer{
