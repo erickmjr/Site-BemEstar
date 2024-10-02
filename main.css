@@ -42,12 +42,17 @@ header h1{
 }
 
 header ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2vw;
     margin-top: 1.5vw;
     list-style-type: none;
 }
 
 
 header li{
+    flex: 1 1 48%;
     display: inline;
     margin-right: 2vw;
 }
@@ -179,6 +184,10 @@ footer a{
 
     header h1{
         font-size: 5vw;
+    }
+    
+    header li{
+        flex: 1 1 24%;
     }
 
     header li a{
