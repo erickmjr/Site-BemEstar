@@ -53,8 +53,6 @@ header ul {
 
 header li{
     flex: 1 1 48%;
-    display: inline;
-    margin-right: 2vw;
 }
 
 header li a{
@@ -191,7 +189,7 @@ footer a{
     }
 
     header li a{
-        font-size: 3.8vw;
+        font-size: 3vw;
     }
 
     .sectionH1{
