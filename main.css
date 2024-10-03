@@ -5,6 +5,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
+@keyframes mudarCor {
+    0% {
+        opacity: 0.2;
+    }
+
+    20%{
+        opacity: 0.3;
+    }
+
+    33%{
+        opacity: 0.4;
+    }
+
+    50%{
+        opacity: 0.6;
+    }
+
+    67%{
+        opacity: 0.8;
+    }
+
+    80%{
+        opacity: 0.9;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
 :root{
     --fonte-destaque: 'Figtree', 'cursive';
     --fonte-padrao: 'Poppins', Arial, sans-serif;
@@ -32,7 +62,8 @@ header{
 }
 
 header h1{
-    font-size: 6.5vh;
+    font-size: 3.5vw;
+    animation: mudarCor 1s ease-in-out;
 }
 
 #container-header{
@@ -41,29 +72,31 @@ header h1{
     justify-content: space-around;
 }
 
+#subcontainer-header{
+    width: 100%;
+}
+
+
 header nav{
     width: 100%;
 }
 
-header ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1.5vw;
+header nav ul {
+    display: grid;     
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1vw;
+    align-items: center;
     margin-top: 1.5vw;
     list-style-type: none;
 }
 
-
-header li{
-    flex: 1 1 24%;
-}
-
-header li a{
+header nav ul li{
     font-size: 1.5vw;
+    flex: 1 1 20%;
 }
 
-header a{
+header ul li a{
+    font-size: 1.8vw;
     padding: 7px;
     transition-duration: 0.4s;
     text-decoration: none;
@@ -87,7 +120,7 @@ header a:hover{
 section h1{
     font-family: var(--fonte-destaque);
     text-align: center;
-    font-size: 4.2vh;
+    font-size: 3vw;
     margin-bottom: 2vw;
     color: var(--cor3);
     
@@ -101,6 +134,10 @@ section h2{
     margin-top: 1.5vw;
     margin-left: 1.5vw;
     padding-left: 1.5vw;
+}
+
+.imagem{
+    max-width: 20vw;
 }
 
 #exercicios ul{
@@ -125,9 +162,8 @@ p{
 
 #formulario input{
     display: block; 
-    max-width: fit-content;
     margin: 0 auto 1vw auto;
-    
+    width: 50%;
 }
 
 input::-webkit-inner-spin-button {
@@ -144,6 +180,7 @@ input::-webkit-outer-spin-button {
     padding: 10px;
     border-radius: 12px;
     border: 1.5px solid black;
+    box-shadow: 2px 3px 8px 1px black;
 }
 
 form button{
@@ -151,6 +188,8 @@ form button{
     border-radius: 10px;
     cursor: pointer;
     font-family: var(--fonte-padrao);
+    width: 30%;
+    border: none;
 }
 
 footer{
@@ -171,12 +210,16 @@ footer a{
 
 @media (max-width: 1000px){
 
+    header nav ul{
+        flex-direction: column;
+    }
+
     header h1{
         font-size: 4vw;
     }
 
-    header li a{
-        font-size: 2vw;
+    header nav ul li a{
+        font-size: 2.5vw;
     }
 
     .sectionH1{
@@ -189,22 +232,22 @@ footer a{
 
 }
 
-@media (max-width: 800px){
+@media (max-width: 600px){
 
     header h1{
         font-size: 5.5vw;
     }
-    
-    header li{
-        flex: 1 1 48%;
+
+    header nav ul li a{
+        font-size: 3vw;
     }
 
-    header li a{
-        font-size: 3.8vw;
+    #section1H1{
+        font-size: 5vw;
     }
 
     .sectionH1{
-        font-size: 4.75vw;
+        font-size: 5.5vw;
     }
     .sectionH2{
         font-size: 4vw;
